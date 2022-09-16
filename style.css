@@ -22,12 +22,6 @@ body {
   background-color: var(--bg);
 }
 
-header,
-section {
-  width: 58rem;
-  margin-inline: auto;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -52,11 +46,13 @@ header div {
 }
 
 main {
+  max-width: 58rem;
+  width: 90%;
+
+  margin-inline: auto;
   margin-top: 3.2rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   gap: 2.4rem;
 
   margin-bottom: 4.4rem;
@@ -121,9 +117,9 @@ section ul.social-links li a img {
 }
 
 section ul li {
-  transition: 0.2s;
+  transition: transform 0.2s;
 }
 
 section ul li:hover {
-  transform: translateY(-7px);
+  transform: scale(1.1);
 }
